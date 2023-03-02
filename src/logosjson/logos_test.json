@@ -1,0 +1,109 @@
+{
+  "head": {
+
+  },
+  "body": {
+    "main": [
+      {
+        "def": "A",
+        "left": "#A",
+        "operator": "=",
+        "operationType": "assignment",
+        "right": {
+          "type": "Integer",
+          "value": 4
+        }
+      },
+      {
+        "def": "B",
+        "left": "#B",
+        "operator": "=",
+        "operationType": "assignment",
+        "right": {
+          "type": "Integer",
+          "value": 8
+        }
+      },
+      {
+        "def": "C",
+        "left": "#C",
+        "operator": "=",
+        "operationType": "assignment",
+        "right": {
+          "type": "Integer",
+          "value": 0
+        }
+      },
+      {
+        "def": "D",
+        "left": "#D1",
+        "operator": "=",
+        "operationType": "assignment",
+        "right": {
+          "left": {
+            "type": "Expression",
+            "left": {
+              "index": "@0x003D9A",
+              "value": "&A",
+              "operator": "=>",
+              "operationType": "implicit",
+              "right": "&B"
+            }
+          },
+          "right": {
+            "type": "Expression",
+            "value": {
+              "left": "&0x003D9A",
+              "operator": "==",
+              "operationType": "equivalent",
+              "right": {
+                "type": "Expression",
+                "left": {
+                  "index": "@0x003D97",
+                  "value": "&C",
+                  "operator": "=",
+                  "operationType": "assignment",
+                  "right": {
+                    "type": "Integer",
+                    "value": 666
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "print": "&A"
+      },
+      {
+        "print": "&B"
+      },
+      {
+        "print": "&C"
+      },
+      {
+        "print": "&D"
+      },
+      {
+        "print": "D1"
+      },
+      {
+        "print": "&C"
+      },
+      {
+        "_result_": "4\n 8 \n 0\n {DEFINITION | D : D1 <=> {...}}\n {ASSIGNMENT | D1 = {...}}\n 666"
+      }
+    ],
+    "Static": [
+      {
+
+      }
+    ],
+    "Class": [
+      {
+
+      }
+    ]
+  }
+}

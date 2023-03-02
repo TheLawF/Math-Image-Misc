@@ -1,0 +1,7 @@
+{
+  "def": "A",
+  "uuid": null,
+  "operator": "=>",
+  "operationType": "ASSIGN",
+  "value": "你好世界"
+}
